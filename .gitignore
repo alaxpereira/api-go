@@ -1,0 +1,51 @@
+# -----------------------
+# Go build artifacts
+# -----------------------
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# -----------------------
+# Dependency directories
+# -----------------------
+/vendor/
+/Godeps/
+
+# -----------------------
+# Build directories
+# -----------------------
+/bin/
+/build/
+
+# -----------------------
+# Environment & logs
+# -----------------------
+# dotenv file
+.env
+
+# log files
+*.log
+
+# -----------------------
+# IDEs & Editors
+# -----------------------
+.vscode/
+.idea/
+/*.code-workspace
+*.swp
+*~
+
+# -----------------------
+# OS files
+# -----------------------
+.DS_Store
+Thumbs.db
