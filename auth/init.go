@@ -10,7 +10,15 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 )
 
-// GenerateInitToken exige agentId+agentSecret antes de emitir o init token
+// GenerateInitToken ...
+// @Summary     Init Token
+// @Description Gera init-token via Basic Auth (agentId/agentSecret)
+// @Tags        auth
+// @Produce     json
+// @Success     200 {object} map[string]interface{}
+// @Failure     401 {object} models.ErrorResponse
+// @Router      /token [get]
+// @Security    BasicAuth
 func GenerateInitToken(c *gin.Context) {
 	id, secret, ok := c.Request.BasicAuth()
 	if !ok ||
